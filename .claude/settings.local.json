@@ -10,7 +10,9 @@
       "Bash(uv venv:*)",
       "Bash(source:*)",
       "Bash(uv pip install:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(uv sync:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []

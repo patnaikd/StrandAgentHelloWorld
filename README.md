@@ -88,15 +88,43 @@ StrandAgentHelloWorld/
 
 ## Development Setup
 
-This project uses [`uv`](https://github.com/astral-sh/uv) for Python package management.
+This project uses [`uv`](https://github.com/astral-sh/uv) for Python package management with `pyproject.toml`.
 
 ```bash
 # Install dependencies
 uv sync
 
-# Run the application
-uv run <script>
+# Install with development dependencies
+uv sync --all-extras
+
+# Run a script
+uv run python src/greeting_agent.py
+
+# Run Phase 1 demo
+uv run python src/demo_phase1.py
+
+# Run tests (when implemented)
+uv run pytest
 ```
+
+### First Time Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/patnaikd/StrandAgentHelloWorld.git
+   cd StrandAgentHelloWorld
+   ```
+
+2. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your API keys
+   ```
+
+3. **Install dependencies**
+   ```bash
+   uv sync
+   ```
 
 ## Resources
 
