@@ -23,6 +23,7 @@ dependencies = [
     "strands-agents-tools==0.2.17",
     "PyGithub==2.5.0",
     "python-dotenv>=1.0.0",
+    "anthropic>=0.75.0",
 ]
 
 [project.optional-dependencies]
