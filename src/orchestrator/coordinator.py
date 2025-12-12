@@ -9,8 +9,8 @@ import logging
 from typing import Dict, List, Optional, Any
 from enum import Enum
 
-from ..orchestrator.workspace import WorkspaceManager
-from ..tools.github_tools import GitHubClient
+from src.orchestrator.workspace import WorkspaceManager
+from src.tools.github_tools import GitHubClient
 
 logger = logging.getLogger(__name__)
 
